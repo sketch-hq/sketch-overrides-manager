@@ -17,7 +17,7 @@ With Sketch 94, an entire new and powerful set of override options has been adde
 This set of overrides is enabled by default, so then anyone that uses the library can override them with unespected results.
 With this plugin you can quickly set all the new available overrides off, so then no one can override these options until you manually decide to enable them.
 
-The plugin offers both the options to enable and disable these options for **all** the available Symbols
+The plugin offers both the options to enable and disable these overrides for **all** the available Symbols
 
 ## Notes:
 
