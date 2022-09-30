@@ -26,7 +26,7 @@ export default function () {
             if (!properties.includes(property)) {
                 if (identifier.includes("script-lock")) {
                     override.editable = false;
-                    alert = "🔒 Overrides locked";
+                    alert = "🔒 Overrides disabled";
                     message =
                         "Your symbols overrides properties that are not: \n";
                     message += "- Text Value \n";
@@ -34,10 +34,10 @@ export default function () {
                     message += "- Image \n";
                     message += "- Symbol \n";
                     message += "- Hotspot destination \n";
-                    message += "has been blocked";
+                    message += "has been disabled";
                 } else {
                     override.editable = true;
-                    alert = "🔓 Overrides unlocked";
+                    alert = "🔓 Overrides enabled";
                     message = "All your overrides are now enabled";
                 }
             }
