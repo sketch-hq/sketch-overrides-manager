@@ -1,7 +1,7 @@
 {
     "name": "sketch-overrides-manager",
     "description": "Manage to enable/disable the new Sketch v94+ overrides in batch",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "engines": {
         "sketch": ">=3.0",
         "node": "16.15.0"
