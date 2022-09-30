@@ -3,7 +3,7 @@
     "bundleVersion": 1,
     "commands": [
         {
-            "name": "🔒 Disable overrides",
+            "name": "❌ Disable overrides",
             "identifier": "script-lock",
             "script": "./script.js",
             "handlers": {
@@ -14,7 +14,7 @@
             }
         },
         {
-            "name": "🔓 Enable overrides",
+            "name": "✅ Enable overrides",
             "identifier": "script-unlock",
             "script": "./script.js",
             "handlers": {
@@ -26,7 +26,7 @@
         }
     ],
     "menu": {
-        "title": "Sketch overrides manager",
+        "title": "Sketch 94+ overrides manager",
         "items": ["script-lock", "script-unlock"],
         "isRoot": false
     },

@@ -3,18 +3,16 @@
 With Sketch 94, an entire new and powerful set of override options has been added:
 
 -   Color Variables
--   Text Font-Family
 -   Text Size
 -   Text Color
 -   Text Decoration
 -   Text Align
--   Text Vertical Align
 -   Fill Color
 -   Border Color
 -   Shadow Color
 -   Inner Shadow Color
 
-This set of overrides is enabled by default, so then anyone that uses the library can override them with unespected results.
+This set of overrides is enabled by default, so then anyone that uses the library can override them with unexpected results.
 With this plugin you can quickly set all the new available overrides off, so then no one can override these options until you manually decide to enable them.
 
 The plugin offers both the options to enable and disable these overrides for **all** the available Symbols

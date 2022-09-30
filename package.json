@@ -1,5 +1,5 @@
 {
-    "name": "sketch-overrides-manager",
+    "name": "sketch-94-overrides-manager",
     "description": "Manage to enable/disable the new Sketch v94+ overrides in batch",
     "version": "1.2.3",
     "engines": {
@@ -7,9 +7,9 @@
         "node": "16.15.0"
     },
     "skpm": {
-        "name": "Sketch Overrides Manager",
+        "name": "Sketch 94+ Overrides Manager",
         "manifest": "src/manifest.json",
-        "main": "sketch-overrides-manager.sketchplugin",
+        "main": "sketch-94-overrides-manager.sketchplugin",
         "assets": [
             "assets/**/*"
         ],

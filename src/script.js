@@ -1,7 +1,5 @@
 // Mocha.sharedRuntime().loadFrameworkWithName("CoreFoundation");
 
-// var sort = require("smart-deep-sort");
-
 // #region Sketch Items
 const sketch = require("sketch");
 var identifier = __command.identifier();
@@ -17,6 +15,18 @@ var properties = [
 ];
 
 export default function () {
+    if (identifier.includes("script-lock")) {
+        sketch.UI.alert(
+            "🔒 Disable Overrides",
+            "🚨 We're about to disable the new set of overrides available with Sketch 94"
+        );
+    } else {
+        sketch.UI.alert(
+            "🔒 Enable Overrides",
+            "🚨 We're about to enable the new set of overrides available with Sketch 94"
+        );
+    }
+
     let alert = "";
     let message = "";
     symbols.forEach((symbol) => {
@@ -27,13 +37,16 @@ export default function () {
                 if (identifier.includes("script-lock")) {
                     override.editable = false;
                     alert = "🔒 Overrides disabled";
-                    message =
-                        "Your symbols overrides properties that are not: \n";
-                    message += "- Text Value \n";
-                    message += "- Text Style \n";
-                    message += "- Image \n";
-                    message += "- Symbol \n";
-                    message += "- Hotspot destination \n";
+                    message = "Your symbols overrides properties: \n";
+                    message += "- Color Variables \n";
+                    message += "- Text Size \n";
+                    message += "- Text Color \n";
+                    message += "- Text Decoration \n";
+                    message += "- Text Align \n";
+                    message += "- Fill Color \n";
+                    message += "- Border Color \n";
+                    message += "- Shadow Color \n";
+                    message += "- Inner Shadow Color \n";
                     message += "has been disabled";
                 } else {
                     override.editable = true;
