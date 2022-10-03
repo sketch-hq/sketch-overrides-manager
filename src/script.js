@@ -1,6 +1,3 @@
-// Mocha.sharedRuntime().loadFrameworkWithName("CoreFoundation");
-
-// #region Sketch Items
 const sketch = require("sketch");
 var identifier = __command.identifier();
 var symbols = sketch.find("SymbolMaster");
@@ -17,13 +14,13 @@ var properties = [
 export default function () {
     if (identifier.includes("script-lock")) {
         sketch.UI.alert(
-            "🔒 Disable Overrides",
-            "🚨 We're about to disable the new set of overrides available with Sketch 94"
+            "🚨 Disable Overrides",
+            "We're about to disable the new override properties available with Sketch 94+"
         );
     } else {
         sketch.UI.alert(
-            "🔒 Enable Overrides",
-            "🚨 We're about to enable the new set of overrides available with Sketch 94"
+            "🚨 Enable Overrides",
+            "We're about to enable the new override properties available with Sketch 94+"
         );
     }
 
@@ -37,7 +34,7 @@ export default function () {
                 if (identifier.includes("script-lock")) {
                     override.editable = false;
                     alert = "🔒 Overrides disabled";
-                    message = "Your symbols overrides properties: \n";
+                    message = "Your symbol overrides properties: \n";
                     message += "- Color Variables \n";
                     message += "- Text Size \n";
                     message += "- Text Color \n";
@@ -47,11 +44,21 @@ export default function () {
                     message += "- Border Color \n";
                     message += "- Shadow Color \n";
                     message += "- Inner Shadow Color \n";
-                    message += "has been disabled";
+                    message += "have been disabled";
                 } else {
                     override.editable = true;
                     alert = "🔓 Overrides enabled";
-                    message = "All your overrides are now enabled";
+                    message = "Your symbol overrides properties: \n";
+                    message += "- Color Variables \n";
+                    message += "- Text Size \n";
+                    message += "- Text Color \n";
+                    message += "- Text Decoration \n";
+                    message += "- Text Align \n";
+                    message += "- Fill Color \n";
+                    message += "- Border Color \n";
+                    message += "- Shadow Color \n";
+                    message += "- Inner Shadow Color \n";
+                    message += "have now been enabled";
                 }
             }
         });
