@@ -3,7 +3,6 @@
 With Sketch 94, an entire new and powerful set of override options has been added:
 
 -   Color Variables
--   Text Size
 -   Text Color
 -   Text Decoration
 -   Text Align
